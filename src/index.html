@@ -4,301 +4,69 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./output.css" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-    theme: {
-        extend: {
-            fontFamily: {
-                inter: ['Inter', 'sans-serif'],
-            },
-            colors: {
-                // Custom colors added here
-                'primary': '#bd24df',
-                'secondary': '#2d6ade',
-                'dark-card': '#0c1b44',
-                'dark-body': '#040d26',
-                'light-text': '#8a9bca',
-            },
-            animation: {
-                'infinite-scroll': 'infinite-scroll 80s linear infinite',
-            },
-            keyframes: {
-                'infinite-scroll': {
-                    from: { transform: 'translateX(0)' },
-                    to: { transform: 'translateX(-100%)' },
-                }
-            }
-        },
-    },
-};
-
-    
-</script>
-        <style>
-           @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-           .roboto-banner-weight {
-              font-family: "Roboto", sans-serif;
-              font-optical-sizing: auto;
-              font-weight: 500;
-              font-style: normal;
-              font-variation-settings:
-              "wdth" 100;
-            }
-            
-
-        </style>
-
-
     </head>
     <body>
-      <header id="mainHeader" class="bg-[#1f1447] fixed w-full z-40 top-0 shadow-xl h-24 transition-all duration-300 hover:bg-[linear-gradient(90deg,#181c51,#193b82,#5d1a82)]">
-    <div class="max-w-7xl mx-auto px-4 py-3 h-full">
-        <div class="flex justify-between items-center h-full">
+      <header class="bg-[#20174e] fixed w-full z-40 top-0 shadow-md h-24">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex justify-between items-center h-16 ">
 
-            <div class="flex flex-shrink-0 items-center">
-                <img id="headerLogo" src="https://themewagon.github.io/crypto-nextjs/images/logo/logo.svg" 
-                     alt="comp-logo" class="w-auto h-12 transition-all duration-300">
-            </div>
-            
-            <nav class="hidden lg:flex space-x-6 items-center">
-                <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">Home</a>
-                <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">Exchange</a>
-                <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">Features</a>
-                <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">FAQ</a>
-                <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">Contact Us</a>
-                <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">Docs</a>
-            </nav>
-            
-            <div class="flex items-center gap-4"> 
-                <button class="relative flex items-center justify-center cursor-pointer border-0 rounded-lg p-[3px] min-w-[100px] text-white text-lg leading-none select-none whitespace-nowrap touch-manipulation focus:outline-none transition-all duration-300 ease-in-out bg-[linear-gradient(144deg,#00ddeb,#5b42f3_50%,#af40ff)] hover:bg-[linear-gradient(144deg,#af40ff,#5b42f3_50%,#00ddeb)] hover:-translate-y-[2px] active:scale-[0.9]">
-                    <span class="bg-transparent px-2 py-2 rounded-[6px] w-fit min-h-fit">
-                        Sign Up
-                    </span>
-                </button>
-                <button class="relative flex items-center justify-center cursor-pointer border-0 rounded-lg p-[3px] min-w-[100px] text-white text-lg leading-none select-none whitespace-nowrap touch-manipulation focus:outline-none transition-all duration-300 ease-in-out bg-[linear-gradient(144deg,#00ddeb,#5b42f3_50%,#af40ff)] hover:bg-[linear-gradient(144deg,#af40ff,#5b42f3_50%,#00ddeb)] hover:-translate-y-[2px] active:scale-[0.9]">
-                    <span class="bg-transparent px-2 py-2 rounded-[6px] w-fit min-h-fit">
+                <!-- Logo Section -->
+                <div class="flex flex-shrink-0">
+                    <img src="https://themewagon.github.io/crypto-nextjs/images/logo/logo.svg" alt="comp-logo" class=" w-auto">
+                </div>
+                <!--6 buuton-->
+                <nav class="flex space-x-6 items-center">
+                    <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">Home</a>
+                    <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">Exchange</a>
+                    <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">Features</a>
+                    <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">FAQ</a>
+                    <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">Contact Us</a>
+                    <a href="#" class="px-2 py-2 text-sm font-medium text-white rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition duration-150">Docs</a>
+                </nav>
+                <!--2 bttns-->
+                <div class="flex items-center gap-4"> 
+                    <button class="text-sm font-semibold text-white bg-indigo-600 px-4 py-2 rounded-lg shadow-md hover:bg-indigo-700 transition duration-150 transform hover:scale-[1.02]">
                         Sign In
-                    </span>
-                </button>
+                    </button>
+                    <button class="text-sm font-semibold text-white bg-indigo-600 px-4 py-2 rounded-lg shadow-md hover:bg-indigo-700 transition duration-150 transform hover:scale-[1.02]">
+                        Sign Up
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-</header>
-<!-- Banner Section dsufidsfosdfsdufisodufi-->
-      <section class="bg-[#1f1447] h-screen w-full flex pt-20 px-0 justify-center items-center" >
-        <div class="grid grid-cols-12 my-10 items-center max-w-7xl mx-165 px-0 ">
-            <div class="col-span-7 text-white items-start text-center">
-                <h1 class="text-6xl font-bold mb-5 justify-between text-start text-center text-left font-family-roboto-banner-weight">
-                    Buy,Sell & Accept
-                </h1>
-                <h1 class="text-6xl font-bold mb-5 justify-between text-start text-center text-left font-family-roboto-banner-weight">
-                    Cryptocurrency
-                </h1>
-                <h1 class="text-6xl font-bold mb-5 justify-between text-start text-center text-left font-family-roboto-banner-weight"> 
-                    With Ease
+      </header>
+
+      <section class="bg-[#1f1447] h-screen flex items-center justify-center pt-24">
+        <div class="grid grid-cols-12 my-16 items-center max-w-7xl mx-10 px-4">
+            <div class="col-span-7 text-white max-w-lg flex flex-col justify-center mx-auto items-start text-center">
+                <h1 class="text-7xl font-bold mb-3 justify-between text-start text-center">
+                    Buy, Sell & Accept
+                    <br>
+                    cryptocurrency With Ease
                 </h1>
                  
-                <p class=" mt-4 mb-1 text-left">A fast, secure, and user-friendly platform to trade Bitcoin,</p>
-                <p class="mb-1 text-left">Ethereum, and other digital assets. Join millions embracing the</p>
-                <p class="mb-6 text-left">future of finance.</p>
+                <p class="mb-1">A fast, secure, and user-friendly platform to trade Bitcoin,</p>
+                <p class="mb-1">Ethereum, and other digital assets. Join millions embracing the</p>
+                <p class="mb-6">future of finance.</p>
                 <div class="flex gap-6 mt-4">
-                    <button class="relative flex items-center justify-center cursor-pointer border-0 rounded-lg p-[3px] min-w-[125px] text-white text-lg leading-none select-none whitespace-nowrap touch-manipulation focus:outline-none transition-all duration-300 ease-in-out bg-[linear-gradient(144deg,#00ddeb,#5b42f3_50%,#af40ff)] hover:bg-[linear-gradient(144deg,#af40ff,#5b42f3_50%,#00ddeb)] hover:-translate-y-[2px] active:scale-[0.9]">
-                      <span class="bg-transparent px-8 py-4 rounded-[6px] w-fit min-h-fit">
-                       Get Started
-                      </span>
+                    <button class="bg-indigo-600 w-fit text-white px-6 py-3 rounded-lg shadow-md hover:bg-indigo-700 transition duration-150 transform hover:scale-[1.02]">
+                        Get Started
                     </button>
-                    <button class="bg-transparent flex justify-center items-center text-white cursor-pointer"><img alt="button-image" loading="lazy" width="47" height="47" decoding="async" data-nimg="1" class="mr-3" style="color:transparent" src="../src/assets/playbutton.svg">
-                        <span class="hover:text-primary">
-                            How It Works
-                        </span>
-                    </button>
+                    <button class="bg-transparent flex justify-center items-center text-white cursor-pointer"><img alt="button-image" loading="lazy" width="47" height="47" decoding="async" data-nimg="1" class="mr-3" style="color:transparent" src="../src/assets/playbutton.svg"><span class="hover:text-primary">How It Work</span></button>
 
                 </div>
             </div>
-            <div class="lg:col-span-5 lg:-m-48 -m-20 overflow-hidden"><img alt="nothing" loading="lazy" width="855" height="760" decoding="async" data-nimg="1" style="color:transparent" src="../src/assets/banner.png"></div>
+            <div class="lg:col-span-5 lg:-m-48 -m-20 overflow-hidden"><img alt="nothing" loading="lazy" width="1013" height="760" decoding="async" data-nimg="1" style="color:transparent" src="../src/assets/banner.png"></div>
             
         </div>
+
+
+
+
+
       </section>
-
-
-<!--slide show section-->
-
-      <section class="min-h-fit">
-    <div class="relative font-inter antialiased">
-        <main class="relative flex flex-col justify-center bg-[#1f1447] overflow-hidden">
-            <div class="w-full max-w-5xl mx-auto px-4 md:px-6 py-3">
-                <div class="text-center">
-
-                    <div x-data="{}" x-init="$nextTick(() => {
-                        let ul = $refs.logos;
-                        ul.insertAdjacentHTML('afterend', ul.outerHTML);
-                        ul.nextSibling.setAttribute('aria-hidden', 'true');
-                    })" class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-                        <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-                            <li>
-                                <img src="https://themewagon.github.io/crypto-nextjs/images/companies/birdseye.svg" alt="birdseye" />
-                            </li>
-                            <li>
-                                <img src="https://themewagon.github.io/crypto-nextjs/images/companies/tandov.svg" alt="tandov" />
-                            </li>
-                            <li>
-                                <img src="https://themewagon.github.io/crypto-nextjs/images/companies/tree.svg" alt="tree" /> 
-                            </li>
-                            <li>
-                                <img src="../src/assets/break.svg" alt="break" />
-                            </li>
-                            <li>
-                                <img src="../src/assets/shield.svg" alt="shield" />
-                            </li>
-                            <li>
-                                <img src="../src/assets/keddar.svg" alt="keddar" />
-                            </li>
-                            <li>
-                                <img src="https://themewagon.github.io/crypto-nextjs/images/companies/birdseye.svg" alt="birdseye" />
-                            </li>
-                            <li>
-                                <img src="https://themewagon.github.io/crypto-nextjs/images/companies/tandov.svg" alt="tandov" />
-                            </li>
-                            <li>
-                                <img src="https://themewagon.github.io/crypto-nextjs/images/companies/tree.svg" alt="tree" />
-                            </li>
-                            <li>
-                                <img src="../src/assets/break.svg" alt="break" />
-                            </li>
-                            <li>
-                                <img src="../src/assets/shield.svg" alt="shield" />
-                            </li>
-                            <li>
-                                <img src="../src/assets/keddar.svg" alt="keddar" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-</section>
-
-
-<!--card section-->
-
-<section class="bg-[#0e1840] min-h-fit w-auto pb-10">
-    <div class="text-center pt-16 px-6">
-        <h1 class="text-[#d1cff8] text-5xl font-bold">How It Works</h1>
-        <p class="text-[#7994e2] text-xl max-w-2xl mx-auto mt-4">
-            Getting started with crypto is simple. Create an account, verify your identity, and start buying, selling, or accepting digital currencies in just a few clicks — all on a secure and intuitive platform.
-        </p>
-    </div>
-    <!-- <div class="grid grid-cols-3 mt-20 gap-x-5 gap-y-20 px-28">
-        <div class="bg-[#1f1447] rounded-2xl p-8 mx-8 hover:scale-105 transition-transform duration-300">
-            <img src="https://themewagon.github.io/crypto-nextjs/images/work/icon-one.svg" alt="Create Account" class="mb-6">
-            <h2 class="text-2xl font-semibold text-white mb-4">Create an Account</h2>
-            <p class="text-[#7994e2]">
-                Sign up with your email and set up a secure password to create your account.
-            </p>
-        </div>
-        <div class="bg-[#1f1447] rounded-2xl p-8 mx-8 hover:scale-105 transition-transform duration-300">
-            <img src="https://themewagon.github.io/crypto-nextjs/images/work/icon-two.svg" alt="Create Account" class="mb-6">
-            <h2 class="text-2xl font-semibold text-white mb-4">Create an Account</h2>
-            <p class="text-[#7994e2]">
-                Sign up with your email and set up a secure password to create your account.
-            </p>
-        </div>
-        <div class="bg-darkmode border border-darkmode group hover:border-primary hover:scale-105 duration-300 p-8 relative rounded-2xl hover:mb-5">
-            <div class="rounded-full flex justify-center absolute -top-10 left-40% p-6 bg-linear-to-r from-primary to-secondary">
-                <img alt="/crypto-nextjs/images/work/icon-three.svg" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" style="color:transparent" src="/crypto-nextjs/images/work/icon-three.svg">
-            </div>
-            <div>
-                <img alt="arrow-bg" loading="lazy" width="85" height="35" decoding="async" data-nimg="1" style="color:transparent" src="https://themewagon.github.io/crypto-nextjs/images/work/icon-three.svg">
-            </div>
-            <p class="text-2xl text-white/80 font-semibold text-center mt-8 capitalize">
-                Buy, Sell &amp; Exchange
-            </p>
-            <p class="text-base font-normal text-white/60 text-center mt-2 overflow-hidden line-clamp-3 group-hover:h-auto group-hover:line-clamp-none transition-all duration-300">
-                Easily buy or sell cryptocurrencies like Bitcoin and Ethereum, or convert between coins — all with real-time rates and low transaction fees.
-            </p>
-        </div>
-    </div> -->
-    </section>
-    <section class="py-24 bg-[#0e1840] text-white font-sans min-h-screen pt-0">
-        <div class="max-w-7xl mx-auto px-8">
-
-            <div class="grid grid-cols-3 gap-8">
-
-                <div class="relative group transition-all duration-500 hover:-translate-y-1">
-                    <div class="absolute inset-0 bg-gradient-to-r from-primary/70 to-secondary/70 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500 blur-xl"></div>
-                    <div class="relative z-10 p-8 h-full rounded-2xl bg-dark-card border border-[#091945] transition duration-300">
-                        <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/20 text-primary mb-6">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3">Create Account</h3>
-                        <p class="text-light-text">Sign up with your email, set up a secure password, and verify your identity to unlock full access to the platform. Getting started takes just a few minutes.</p>
-                    </div>
-                </div>
-
-                <div class="relative group transition-all duration-500 hover:-translate-y-1">
-                    <div class="absolute inset-0 bg-gradient-to-r from-primary/70 to-secondary/70 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500 blur-xl"></div>
-                    <div class="relative z-10 p-8 h-full rounded-2xl bg-dark-card border border-[#091945] transition duration-300">
-                        <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-secondary/20 text-secondary mb-6">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3">Add Funds</h3>
-                        <p class="text-light-text">Deposit money using your preferred payment method — bank transfer, debit card, or crypto wallet — and get ready to explore the world of digital assets.</p>
-                    </div>
-                </div>
-
-                <div class="relative group transition-all duration-500 hover:-translate-y-1">
-                    <div class="absolute inset-0 bg-gradient-to-r from-primary/70 to-secondary/70 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500 blur-xl"></div>
-                    <div class="relative z-10 p-8 h-full rounded-2xl bg-dark-card border border-[#091945] transition duration-300">
-                        <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/20 text-primary mb-6">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v2.5m1.5-2.5V14m0-2.5v2.5M10 11.5V14m0-2.5v2.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3">Buy, Sell & Exchange</h3>
-                        <p class="text-light-text">Easily buy or sell cryptocurrencies like Bitcoin and Ethereum, or convert between coins — all with real-time rates and low transaction fees.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    
-
-</section>
-
-
-<script>
-    const header = document.getElementById('mainHeader');
-    const logo = document.getElementById('headerLogo');
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            // Shrink header and change base color to be the start of the gradient, making the hover more noticeable.
-            header.classList.remove('h-24', 'bg-[#1f1447]');
-            header.classList.add('h-16', 'bg-[#181c51]');
-            
-            logo.classList.remove('h-12');
-            logo.classList.add('h-8');
-        } else {
-            // Restore original size and color.
-            header.classList.remove('h-16', 'bg-[#181c51]');
-            header.classList.add('h-24', 'bg-[#1f1447]');
-            
-            logo.classList.remove('h-8');
-            logo.classList.add('h-12');
-        }
-    });
-    document.querySelector("body > div:nth-child(1) > main > section:nth-child(3) > div.container > div.grid.md\\:grid-cols-2.lg\\:grid-cols-3.gap-y-20.gap-x-5.mt-20 > div:nth-child(3)")
-</script>
 
     </body>
 </html>
 
-<!--<a class="block bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white duration-300 px-6 py-3 rounded-lg" href="#">Sign In</a>-->
 
-
-<!--transition-all duration-300 hover:bg-[linear-gradient(90deg,#181c51,#193b82,#5d1a82)]-->
